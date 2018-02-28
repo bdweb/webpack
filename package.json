@@ -19,13 +19,13 @@
   "license": "MIT",
   "homepage": "https://github.com/ReactJSResources/react-webpack-babel#readme",
   "dependencies": {
-    "node-gyp": "^3.6.2",
     "node-sass": "^4.7.2",
     "normalize.css": "^7.0.0",
     "react": "^16.2.0",
-    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
-    "sass-loader": "^6.0.6"
+    "react-materialize": "2.0.5",
+    "sass-loader": "^6.0.6",
+    "sqlite3": "3.1.13"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

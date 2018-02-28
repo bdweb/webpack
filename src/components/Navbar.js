@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, NavLink ,IndexLink  } from 'react-router-dom'
-import  {Navbar, Nav, NavItem, MenuItem, NavDropdown}  from 'react-bootstrap';
+import { Link, NavLink ,IndexLink } from 'react-router-dom';
+import  {Navbar, Nav, NavItem, MenuItem, NavDropdown, SideNav, SideNavItem, Button}  from 'react-materialize';
 window.jQuery = require('../../public/js/jquery-3.3.1.min.js');
 require('../../public/js/wow.min.js');
 // require('../../public/js/jquery-3.3.1.min.js');
@@ -9,35 +9,28 @@ export default class Header extends React.Component{
     return(
 
       <header>
-
-<Navbar  collapseOnSelect > 
-  <Navbar.Header>
-    <Navbar.Brand className="navbar-brand">
-    <a href="index.html"><h1><span>Com</span>pany</h1></a>
-    </Navbar.Brand>
-    <Navbar.Toggle />
-  </Navbar.Header>
-  <Navbar.Collapse className="navigation">
-    <Nav pullRight>
-    <NavItem eventKey={2} href="#">
-    <NavLink exact  to="/" activeClassName="active">Home</NavLink >
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/about" activeClassName="active">About Us</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/services" activeClassName="active">Services</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
-      </NavItem>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>;
-
+<Navbar brand='logo' right fixed={true}>
+  <NavItem href='get-started.html'>Getting started</NavItem>
+  <NavItem href='components.html'>Components</NavItem>
+</Navbar>
+<SideNav
+  trigger={<Button>SIDE NAV DEMO</Button>}
+  options={{ closeOnClick: true }}
+  >
+  <SideNavItem userView
+    user={{
+      background: 'img/office.jpg',
+      image: 'img/yuna.jpg',
+      name: 'John Doe',
+      email: 'jdandturk@gmail.com'
+    }}
+  />
+  <SideNavItem href='#!icon' icon='cloud'>First Link With Icon</SideNavItem>
+  <SideNavItem href='#!second'>Second Link</SideNavItem>
+  <SideNavItem divider />
+  <SideNavItem subheader>Subheader</SideNavItem>
+  <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
+</SideNav>
 
     {/* <nav className="navbar navbar-default  navbar-fixed-top">
       <div className="navigation">

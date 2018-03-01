@@ -1,8 +1,39 @@
-body {
-  background: #ece7e7;
-}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
-.small-img {
-  display: block;
-  width: 25%;
+  main {
+    flex: 1 0 auto;
+  }
+      
+header {
+  position: relative;
+  z-index: 999;
+}
+nav {
+  ul a, a.button-collapse{
+    color:#333;
+    &.active {
+      color:#1BBD36
+    }
+  }
+  background-color: #fff;
+}
+footer.page-footer {
+  background: #1BBD36;
+  color:#bdbdbd;
+}
+// .parallax-container .parallax img {    
+//   transform: translate3d(-50%, 554px, 0px)!important;
+// }
+.social-links li {
+  a, p{color:#bdbdbd}
+  a:hover{
+    color:#fff;
+  }
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 25px;
 }

@@ -9,7 +9,6 @@ import {
 // import Preview from './components/Preview';
 // import Help from './components/Help';
 import NotFound from './components/NotFound';
-import './components/App.css';
 // import Page from './components/Page';
 import Home from './components/Home';
 import About from './components/About';
@@ -39,7 +38,7 @@ const App = (props) => (
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/preview" render={routeProps => <Preview {...routeProps} prismicCtx={props.prismicCtx} />} /> */}
       {/* <Route exact path="/:uid" render={routeProps => <Page {...routeProps} prismicCtx={props.prismicCtx} />} /> */}
-      <Route component={Header} />
+      <Route component={NotFound} />
     </Switch>
     {/* <Footer/> */}
     </div>

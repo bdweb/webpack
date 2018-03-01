@@ -4,19 +4,30 @@ import  {Navbar, Nav, NavItem, MenuItem, NavDropdown, SideNav, SideNavItem, Butt
 window.jQuery = require('../../public/js/jquery-3.3.1.min.js');
 require('../../public/js/wow.min.js');
 // require('../../public/js/jquery-3.3.1.min.js');
+const btn = <div></div>;
 export default class Header extends React.Component{
   render(){
     return(
 
       <header>
 <Navbar brand='logo' right fixed={true}>
-  <NavItem href='get-started.html'>Getting started</NavItem>
-  <NavItem href='components.html'>Components</NavItem>
+<li>
+  <NavLink exact  to="/" activeClassName="active">Home</NavLink >
+  </li><li>
+  <NavLink to="/about" activeClassName="active">About Us</NavLink>
+  </li><li>
+  <NavLink to="/services" activeClassName="active">Services</NavLink>
+  </li><li>
+  <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+  </li><li>
+  <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+  </li>
 </Navbar>
-<SideNav
-  trigger={<Button>SIDE NAV DEMO</Button>}
+{/* <SideNav
+  trigger={btn}
   options={{ closeOnClick: true }}
   >
+  <NavLink exact  to="/" activeClassName="active">Home</NavLink >
   <SideNavItem userView
     user={{
       background: 'img/office.jpg',
@@ -25,12 +36,12 @@ export default class Header extends React.Component{
       email: 'jdandturk@gmail.com'
     }}
   />
-  <SideNavItem href='#!icon' icon='cloud'>First Link With Icon</SideNavItem>
+  <SideNavItem href='/' icon='cloud'>First Link With Icon</SideNavItem>
   <SideNavItem href='#!second'>Second Link</SideNavItem>
   <SideNavItem divider />
   <SideNavItem subheader>Subheader</SideNavItem>
   <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
-</SideNav>
+</SideNav> */}
 
     {/* <nav className="navbar navbar-default  navbar-fixed-top">
       <div className="navigation">

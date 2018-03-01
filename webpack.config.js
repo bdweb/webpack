@@ -57,7 +57,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/template.html',
       files: {
-        css: ['style.css', 'css/bootstrap.min.css', 'css/animate.css', 'css/style.css'],
+        css: ['style.css', 'css/bootstrap.min.css', 'css/animate.css'],
         js: [ "/js/jquery-3.3.1.min.js", "js/wow.min.js","bundle.js"],
       }
     }),

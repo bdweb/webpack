@@ -1,5 +1,5 @@
 import React from 'react';
-import Parallax from 'react-materialize/lib/Parallax';
+import {Parallax, Button} from 'react-materialize';
 
 export default class Home extends React.Component{
   componentDidMount() {
@@ -9,7 +9,8 @@ export default class Home extends React.Component{
   render(){
     return(
       <div>
-  <Parallax imageSrc="http://materializecss.com/images/parallax1.jpg"/>
+        {/* <button data-activates="sidenav_0" class="btn">aaaa</button> */}
+  <Parallax imageSrc="/images/bg.jpg"/>
   <div className="section white">
     <div className="row container">
       <h2 className="header">Parallax</h2>

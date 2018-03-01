@@ -8,7 +8,6 @@ import {
 import Preview from './Preview';
 import Help from './Help';
 import NotFound from './NotFound';
-import './App.css';
 import Page from './Page';
 import Home from './Home';
 import About from './About';
@@ -27,7 +26,7 @@ const App = (props) => (
     <Switch>
       {/* <Redirect exact from="/" to="/help"/> */}
       <Route exact path="/help" component={Help} />
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Home3} />
       <Route exact path="/about" component={About} />
       <Route exact path="/industrial" component={Industrial} />
       {/* <Route exact path="/industrial/a" component={Industrial} cat='a' /> */}
@@ -40,6 +39,7 @@ const App = (props) => (
       <Route component={NotFound} />
     </Switch>
     <Footer/>
+    
     </div>
   </Router>
   </div>
